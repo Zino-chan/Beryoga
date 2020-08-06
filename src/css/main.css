@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url("/src/fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url("/src/fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url("/src/fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: url("/src/fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand-Regular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand-Bold", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid {
+  max-width: 1500px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header .logo {
+  font-size: 3.3rem;
+  color: #ff6a6d;
+  margin-bottom: 0 !important;
+}
+
+.header .navbar {
+  padding: 2rem 0;
+}
+
+.header .nav-item {
+  margin: 0 1.7rem;
+}
+
+.header .nav-item .nav-link {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.7rem;
+  font-family: "Quicksand-SemiBold", sans-serif;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .nav-item .nav-link.active, .header .nav-item .nav-link:hover {
+  color: #ff6a6d;
+  font-family: "Quicksand-Bold", sans-serif;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.home {
+  background-image: url("/src/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+}
+
+.home .home-text h1 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.home .home-text p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.home .home-text .btn {
+  color: #fff;
+  background-color: #ff6a6d;
+  font-size: 2rem;
+  padding: 2rem 6rem;
+  border-radius: 60px;
+  border-color: #ff6a6d;
+  font-family: "Quicksand-SemiBold", sans-serif;
+  margin-right: 2rem;
+}
+
+.home .home-text .btn.btn-outline {
+  background-color: transparent !important;
+  color: #ff6a6d !important;
+}
+/*# sourceMappingURL=main.css.map */

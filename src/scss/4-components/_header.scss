@@ -1,0 +1,35 @@
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    .logo{
+        font-size: 3.3rem;
+        color: $primary-color;
+        margin-bottom: 0!important;
+    }
+
+    .navbar{
+        padding: 2rem 0;
+    }
+
+    .nav-item{
+        margin: 0 1.7rem;
+
+        .nav-link{
+            padding: 0;
+            color: $light-gray;
+            font-size: 1.7rem;
+            font-family: $semi-bold-sand;
+            @include transition();
+
+            &.active,
+            &:hover{
+                color: $primary-color;
+                font-family: $bold-sand;
+                transform: scale(1.2);
+                @include transition();
+            }
+        }
+    }
+}
