@@ -1,0 +1,28 @@
+.about{
+    @include bgImg();
+    background-image: url('/src/images/bubble.png');
+
+    .title{
+        margin-bottom: 4rem;
+        h2{
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .about-content{
+        .about-img{
+            @include bgImg(initial, center center);
+            height: 300px;
+            width: 100%;
+            margin: 0 auto;
+
+            &.img-1{background: url('/src/images/icon1.png');}
+            &.img-2{background: url('/src/images/icon2.png');}
+            &.img-3{background: url('/src/images/icon3.png');}
+            
+        }
+    }
+
+   
+}

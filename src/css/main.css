@@ -88,9 +88,9 @@ p {
 
 .home {
   background-image: url("/src/images/bg1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: initial;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: initial !important;
 }
 
 .home .home-text h1 {
@@ -117,5 +117,42 @@ p {
 .home .home-text .btn.btn-outline {
   background-color: transparent !important;
   color: #ff6a6d !important;
+}
+
+.about {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: initial !important;
+  background-image: url("/src/images/bubble.png");
+}
+
+.about .title {
+  margin-bottom: 4rem;
+}
+
+.about .title h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.about .about-content .about-img {
+  background-repeat: no-repeat !important;
+  background-size: initial !important;
+  background-position: center center !important;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about .about-content .about-img.img-1 {
+  background: url("/src/images/icon1.png");
+}
+
+.about .about-content .about-img.img-2 {
+  background: url("/src/images/icon2.png");
+}
+
+.about .about-content .about-img.img-3 {
+  background: url("/src/images/icon3.png");
 }
 /*# sourceMappingURL=main.css.map */
