@@ -248,4 +248,108 @@ p {
 .service .s-03 .s-03-img {
   background: url("/src/images/s-03.png");
 }
+
+.pricing {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: initial !important;
+  background: url("/src/images/bg5.png");
+  padding-top: 4rem;
+}
+
+.pricing .pricing-info {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 6px 19px -4px rgba(255, 106, 109, 0.77);
+          box-shadow: 1px 6px 19px -4px rgba(255, 106, 109, 0.77);
+}
+
+.pricing .pricing-info .pricing-header {
+  background-color: #ff6a6d;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricing .pricing-info .pricing-header h4 {
+  font-size: 3rem;
+}
+
+.pricing .pricing-info .pricing-body {
+  padding: 3rem;
+}
+
+.pricing .pricing-info .pricing-body h3 {
+  font-size: 2.5rem;
+}
+
+.pricing .pricing-info .pricing-body .blue-mark {
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+  background-position: initial !important;
+  background: url("/src/images/blue-mark.png");
+  width: 100%;
+  height: 100%;
+}
+
+.pricing .pricing-info .pricing-body .red-mark {
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+  background-position: initial !important;
+  background: url("/src/images/red-mark.png");
+  width: 100%;
+  height: 100%;
+}
+
+.pricing .pricing-info .pricing-body .price {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.pricing .pricing-info .pricing-body .price::before {
+  content: '\0024';
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  font-size: 4rem;
+  color: #000;
+}
+
+.pricing .pricing-info .pricing-body .price h1 {
+  font-family: "Quicksand-Regular", sans-serif;
+  font-size: 10rem;
+  color: #3b3a3a;
+}
+
+.pricing .pricing-info .pricing-body .price h1 span {
+  font-size: 4rem;
+}
+
+.pricing .pricing-info .pricing-body .price p {
+  font-style: italic;
+}
+
+.pricing .pricing-info .pricing-body .pricing-btn {
+  margin-top: 5rem;
+}
+
+.pricing .pricing-info .pricing-body .pricing-btn .btn {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Quicksand-SemiBold", sans-serif;
+  padding: 2rem 3rem;
+  border-radius: 50px;
+}
+
+.pricing .pricing-info .pricing-body .pricing-btn .btn.btn-blue {
+  background-color: #8ec7fb;
+}
+
+.pricing .pricing-info .pricing-body .pricing-btn .btn.btn-red {
+  background-color: #ff6a6d;
+}
 /*# sourceMappingURL=main.css.map */
