@@ -10,7 +10,14 @@
     
     <title>Beryoga</title>
 </head>
-<body>
+<body data-barba="wrapper">
+
+    <!--Loader-->
+    <div class="page-transition">
+        <div class="loader"></div>
+    </div>
+
+
      <!-- Header Start-->
      <header class="header vw-100" id="header">
         <div class="container-fluid h-100">
@@ -28,6 +35,7 @@
     </header>
     <!-- Header Ends -->
 
+    <main data-barba="container" data-barba-namespace="pricing">
     <section class="pricing vh-100 vw-100 d-flex justify-content-center align-items-center">
         <div class="container-fluid">
             <div class="row no-gutters">
@@ -65,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="pricing-info position-relative" style="z-index: 10; transform: scale(1.1);">
+                    <div class="pricing-info position-relative" style="z-index: 8; transform: scale(1.1);">
                         <div class="pricing-header">
                             <h4>Best seller</h4>
                         </div>
@@ -132,6 +140,17 @@
             </div>
         </div>
     </section>
+    <!--Pricing Ends-->
+    </main>
+
+    <!--Gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    
+    <!-- Barba js -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/@barba/css"></script>
+
+    <script src="/src/js/main.js"></script>
     
 </body>
 </html>
