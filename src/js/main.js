@@ -43,3 +43,10 @@ barba.init({
 	 		}, n);
 	 	});
 	}
+
+
+new Glide('.glide').mount({
+	type: 'carousel',
+	startAt: 0,
+	perView: 1
+})

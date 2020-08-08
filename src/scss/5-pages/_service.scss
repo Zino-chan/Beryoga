@@ -1,4 +1,39 @@
 .service{
+    position: relative;
+    @include bgImg(contain, initial);
+    background: url('/src/images/bg2.png');
+
+    .slider-controls{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        .btn{
+            border-radius: 50px;
+            color: $primary-color;
+            background-color: transparent;
+            border-color: $primary-color;
+            box-shadow: none;
+            font-size: 2rem;
+            margin: 0 5px;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            padding: 0;
+            font-family: $semi-bold-sand;
+            @include transition();
+
+            
+
+            &:hover,
+            &.glide__bullet--active{
+                color: $white;
+                background-color: $primary-color;
+                box-shadow:  1px 6px 19px -4px rgba(255,106,109,0.77);
+            }
+        }
+    }
 
     .service-img{
         @include bgImg(100% 100%, initial);
@@ -15,9 +50,6 @@
     .s-01{
         width: 100vw;
         padding:15rem 0;
-        @include bgImg(contain, initial);
-        background: url('/src/images/bg2.png');
-
 
         .s-01-img{background: url('/src/images/s-01.png');}
 
@@ -40,9 +72,8 @@
 
     // S-02
     .s-02{
-        padding-bottom:15rem;
-        @include bgImg(contain);
-        background: url('/src/images/bg3.png');
+        width: 100vw;
+        padding:15rem 0;
 
         .s-02-img{background: url('/src/images/s-02.png');}
 
@@ -69,9 +100,8 @@
 
     //S-03
     .s-03{
-        padding-bottom:15rem;
-        @include bgImg(cover);
-        background: url('/src/images/bg4.png');
+        width: 100vw;
+        padding:15rem 0;
 
         .s-03-img{background: url('/src/images/s-03.png');}
 

@@ -44,6 +44,11 @@ p {
   color: rgba(0, 0, 0, 0.5);
 }
 
+section,
+main {
+  overflow-x: hidden;
+}
+
 .container-fluid {
   max-width: 1600px;
 }
@@ -175,6 +180,48 @@ p {
   background: url("/src/images/icon3.png");
 }
 
+.service {
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: initial !important;
+  background: url("/src/images/bg2.png");
+}
+
+.service .slider-controls {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.service .slider-controls .btn {
+  border-radius: 50px;
+  color: #ff6a6d;
+  background-color: transparent;
+  border-color: #ff6a6d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 2rem;
+  margin: 0 5px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  padding: 0;
+  font-family: "Quicksand-SemiBold", sans-serif;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.service .slider-controls .btn:hover, .service .slider-controls .btn.glide__bullet--active {
+  color: #fff;
+  background-color: #ff6a6d;
+  -webkit-box-shadow: 1px 6px 19px -4px rgba(255, 106, 109, 0.77);
+          box-shadow: 1px 6px 19px -4px rgba(255, 106, 109, 0.77);
+}
+
 .service .service-img {
   background-repeat: no-repeat !important;
   background-size: 100% 100% !important;
@@ -192,10 +239,6 @@ p {
 .service .s-01 {
   width: 100vw;
   padding: 15rem 0;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
-  background-position: initial !important;
-  background: url("/src/images/bg2.png");
 }
 
 .service .s-01 .s-01-img {
@@ -222,11 +265,8 @@ p {
 }
 
 .service .s-02 {
-  padding-bottom: 15rem;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
-  background-position: initial !important;
-  background: url("/src/images/bg3.png");
+  width: 100vw;
+  padding: 15rem 0;
 }
 
 .service .s-02 .s-02-img {
@@ -257,11 +297,8 @@ p {
 }
 
 .service .s-03 {
-  padding-bottom: 15rem;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: initial !important;
-  background: url("/src/images/bg4.png");
+  width: 100vw;
+  padding: 15rem 0;
 }
 
 .service .s-03 .s-03-img {
