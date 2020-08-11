@@ -3,37 +3,7 @@
     @include bgImg(contain, initial);
     background: url('/src/images/bg2.png');
 
-    .slider-controls{
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        .btn{
-            border-radius: 50px;
-            color: $primary-color;
-            background-color: transparent;
-            border-color: $primary-color;
-            box-shadow: none;
-            font-size: 2rem;
-            margin: 0 5px;
-            width: 70px;
-            height: 70px;
-            line-height: 70px;
-            text-align: center;
-            padding: 0;
-            font-family: $semi-bold-sand;
-            @include transition();
-
-            
-
-            &:hover,
-            &.glide__bullet--active{
-                color: $white;
-                background-color: $primary-color;
-                box-shadow:  1px 6px 19px -4px rgba(255,106,109,0.77);
-            }
-        }
-    }
+   
 
     .service-img{
         @include bgImg(100% 100%, initial);
@@ -107,3 +77,30 @@
 
     }
 }
+.splide__pagination{
+    bottom: 10%!important;
+
+
+    .splide__pagination__page{
+        margin: 0 10px!important;
+        width: 35px!important;
+        height: 35px!important;
+        background-color: #A3EAF9!important;
+        &.is-active{background-color: $primary-color!important;}
+    }
+}
+
+
+@include responsive_max(450px){
+    h2{font-size: 3rem!important;}
+    
+    .slider-controls{
+        bottom: 7%!important;
+        .btn{
+            width: 50px!important;
+            height: 50px!important;
+            line-height: 50px!important;
+        }
+    }
+}
+

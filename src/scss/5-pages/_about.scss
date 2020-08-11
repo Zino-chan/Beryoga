@@ -1,6 +1,7 @@
 .about{
     @include bgImg();
     background-image: url('/src/images/bubble.png');
+    padding: 13rem 0;
 
     .title{
         margin-bottom: 4rem;

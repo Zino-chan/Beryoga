@@ -1,6 +1,8 @@
 .home{
     background-image: url('/src/images/bg1.png');
     @include bgImg();
+    min-height: 100vh;
+    padding: 10rem 0;
 
     .home-text{
         h1{font-size: 5rem; margin-bottom: 4rem;}
@@ -23,4 +25,48 @@
             }
         }
     }
+}
+
+
+//Media 
+@include responsive_tab(){
+    .container-fluid{
+        max-width: 970px!important;
+    }
+}
+
+@include responsive_mobile(){
+    //.header{display: none;}
+    html{font-size: 12px;}
+    
+    .home{
+        .container-fluid{padding: 0 2rem;}
+
+        background-size: contain!important; 
+    }
+}
+
+@include responsive_max(450px){
+    html{font-size: 10px;}
+
+    .home{
+        background-size: initial!important; 
+        .home-text{
+            h1{font-size: 3rem!important;}
+            p{font-size: 1.5rem!important;}
+            a.btn{
+                font-size: 1.5rem!important; 
+                margin-right: 0!important;
+                padding: 1.2rem 5rem;
+            }
+        }
+    }
+}
+
+@include responsive_max(320px){
+    .home-text a.btn{padding: 1.5rem 3rem!important;}
+}
+
+@include responsive_min(1300px) {
+    .home-text p{width: 50%;}
 }

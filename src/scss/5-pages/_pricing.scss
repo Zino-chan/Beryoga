@@ -1,7 +1,9 @@
 .pricing{
     @include bgImg();
     background: url('/src/images/bg5.png');
-    padding-top: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    min-height: 100vh;
 
     .pricing-info{
         background-color: $white;
@@ -79,4 +81,33 @@
 
     
     }
+}
+
+
+//Media
+
+@include responsive_tab(){
+    .pricing-info{
+        width: 80%!important;
+        margin: 2rem auto;
+    }
+
+    .pricing{background-position: center center!important;}
+}
+
+@include responsive_mobile(){
+    .pricing .pricing-info{
+        min-height: auto!important;
+        .pricing-body{
+            .red-mark,
+            .blue-mark{background-size: contain!important;}
+        }
+    }
+
+    .pricing-info.slide-in{transform: initial!important}
+    
+}
+
+@include responsive_max(450px){
+    .pricing-info{width: 100%!important;}
 }
