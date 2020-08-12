@@ -1,0 +1,86 @@
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 8;
+
+    .logo{
+        font-size: 3.3rem;
+        color: $primary-color;
+        margin-bottom: 0!important;
+    }
+
+    .navbar{
+        padding: 2rem 0;
+    }
+
+    .navbar-toggler{
+        width: 65px;
+        height: 65px;
+        display: none!important;
+        .toggler{
+            display: inline-block;
+            width: 100%;
+            height: 4px;
+            background-color: $primary-color;
+            position: relative;
+
+            &::after,
+            &::before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                background-color: $primary-color;
+            }
+            &::after{bottom: -13px;}
+            &::before{top: -13px;}
+            
+        }       
+    }
+
+    .nav-item{
+        margin: 0 1.7rem;
+
+        .nav-link{
+            padding: 0;
+            color: $light-gray;
+            font-size: 1.7rem;
+            font-family: $semi-bold-sand;
+            @include transition();
+
+            &.active,
+            &:hover{
+                color: $primary-color;
+                font-family: $bold-sand;
+                transform: scale(1.2);
+                @include transition();
+            }
+        }
+    }
+}
+
+@include responsive_mobile(){
+    .header{
+        background-color: $white;
+        position: relative;
+        .navbar{padding: 0!important;}
+        .navbar-nav{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: $white;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            align-items: center;
+            @include transition();
+            &.open{max-height: 400px; @include transition();}
+            .nav-item{margin: 2rem 1.5rem !important;}
+        }
+
+        .navbar-toggler{
+            display: inline-flex!important;
+        }
+    }
+}

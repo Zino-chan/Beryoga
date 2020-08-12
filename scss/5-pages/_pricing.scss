@@ -1,0 +1,113 @@
+.pricing{
+    @include bgImg();
+    background: url('/src/images/bg5.png');
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    min-height: 100vh;
+
+    .pricing-info{
+        background-color: $white;
+        border-radius: 20px;
+        width: 100%;
+        padding-bottom: 3rem;
+        overflow: hidden;
+        box-shadow: 1px 6px 19px -4px rgba(255,106,109,0.77);
+
+        .pricing-header{
+            background-color: $primary-color;
+            color: $white;
+            padding: 2rem;
+            text-align: center;
+            h4{font-size: 3rem;}
+        }
+
+        .pricing-body{
+            padding: 3rem;
+
+            h3{font-size: 2.5rem;}
+            .blue-mark{
+                @include bgImg(100%);
+                background: url('/src/images/blue-mark.png');
+                width: 100%;
+                height: 100%;
+            }
+            .red-mark{
+                @include bgImg(100%);
+                background: url('/src/images/red-mark.png');
+                width: 100%;
+                height: 100%;
+            }
+
+            .price{
+                margin-top: 3rem;;
+                text-align: center;
+                position: relative;
+
+                &::before{
+                    content: '\0024';
+                    position: absolute;
+                    top: -15px;
+                    left: 10px;
+                    font-size: 4rem;
+                    color: $black;
+                }
+                h1{
+                    font-family: $regular-sand;
+                    font-size: 10rem;
+                    color: #3b3a3a;
+                
+                    span {
+                        font-size: 4rem;
+                    };
+                }
+                p{
+                    font-style: italic;
+                }
+            }
+
+            .pricing-btn{
+                margin-top: 5rem;
+                .btn{
+                    font-size: 1.5rem;
+                    color: $white;
+                    font-family: $semi-bold-sand;
+                    padding: 2rem 3rem;
+                    border-radius: 50px;
+                    &.btn-blue{background-color: $secondary-color;}
+                    &.btn-red{background-color: $primary-color;}
+                }
+            }
+        }
+
+    
+    }
+}
+
+
+//Media
+
+@include responsive_tab(){
+    .pricing-info{
+        width: 80%!important;
+        margin: 2rem auto;
+    }
+
+    .pricing{background-position: center center!important;}
+}
+
+@include responsive_mobile(){
+    .pricing .pricing-info{
+        min-height: auto!important;
+        .pricing-body{
+            .red-mark,
+            .blue-mark{background-size: contain!important;}
+        }
+    }
+
+    .pricing-info.slide-in{transform: initial!important}
+    
+}
+
+@include responsive_max(450px){
+    .pricing-info{width: 100%!important;}
+}

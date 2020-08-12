@@ -1,0 +1,16 @@
+@import '1-settings/colors';
+@import '1-settings/font';
+@import '1-settings/typography';
+
+
+@import '2-elements/base';
+
+@import '3-tools/mixins';
+
+@import '4-components/header';
+
+@import '5-pages/home';
+@import '5-pages/about';
+@import '5-pages/service';
+@import '5-pages/pricing';
+@import '5-pages/contact';
