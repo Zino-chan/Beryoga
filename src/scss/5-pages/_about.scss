@@ -1,7 +1,8 @@
 .about{
     @include bgImg();
-    background-image: url('/src/images/bubble.png');
+    background-image: url('../images/bubble.png');
     padding: 13rem 0;
+    min-height: 100vh;
 
     .title{
         margin-bottom: 4rem;
@@ -18,9 +19,9 @@
             width: 100%;
             margin: 0 auto;
 
-            &.img-1{background: url('/src/images/icon1.png');}
-            &.img-2{background: url('/src/images/icon2.png');}
-            &.img-3{background: url('/src/images/icon3.png');}
+            &.img-1{background: url('../images/icon1.png');}
+            &.img-2{background: url('../images/icon2.png');}
+            &.img-3{background: url('../images/icon3.png');}
             
         }
     }

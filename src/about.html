@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/main.css">
     
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Beryoga</title>
 </head>
 <body data-barba="wrapper">
+
+    <div class="preloader">
+        <div class="preloader-left"></div>
+        <div class="preloader-icon"></div>
+        <div class="preloader-right"></div>
+    </div>
+
     <!--Page transition-->
     <div class="page-transition">
         <div class="loader"></div>
@@ -38,7 +45,7 @@
 
     <main data-barba="container" data-barba-namespace="about">
     <!-- About Start -->
-    <section class="about vw-100 ">
+    <section class="about vw-100 d-flex align-items-center justify-content-center">
         <div class="container-fluid h-100 d-flex justify-content-center align-items-center flex-column">
             <div class="title text-center">
                 <h2 class="mb-4">Why choose BerYoga</h2>
@@ -88,6 +95,7 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://unpkg.com/@barba/css"></script>
 
-    <script src="/src/js/main.js"></script>
+    <!-- Main js -->
+    <script src="/src/js/main.js" type="module" ></script> 
 </body>
 </html>
