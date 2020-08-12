@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Quicksand-Bold';
-  src: url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-Light';
-  src: url("/src/fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-Medium';
-  src: url("/src/fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-Regular';
-  src: url("/src/fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-SemiBold';
-  src: url("/src/fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
 }
 
 body {
@@ -188,7 +188,7 @@ ul {
 }
 
 .home {
-  background-image: url("/src/images/bg1.png");
+  background-image: url("../images/bg1.png");
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: initial !important;
@@ -276,7 +276,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: initial !important;
-  background-image: url("/src/images/bubble.png");
+  background-image: url("../images/bubble.png");
   padding: 13rem 0;
 }
 
@@ -299,15 +299,15 @@ ul {
 }
 
 .about .about-content .about-img.img-1 {
-  background: url("/src/images/icon1.png");
+  background: url("../images/icon1.png");
 }
 
 .about .about-content .about-img.img-2 {
-  background: url("/src/images/icon2.png");
+  background: url("../images/icon2.png");
 }
 
 .about .about-content .about-img.img-3 {
-  background: url("/src/images/icon3.png");
+  background: url("../images/icon3.png");
 }
 
 .service {
@@ -315,7 +315,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: contain !important;
   background-position: initial !important;
-  background: url("/src/images/bg2.png");
+  background: url("../images/bg2.png");
 }
 
 .service .service-img {
@@ -338,7 +338,7 @@ ul {
 }
 
 .service .s-01 .s-01-img {
-  background: url("/src/images/s-01.png");
+  background: url("../images/s-01.png");
 }
 
 .service .s-01 .s-01-text {
@@ -355,7 +355,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: contain !important;
   background-position: initial !important;
-  background: url("/src/images/mark.png");
+  background: url("../images/mark.png");
   height: 60px;
   width: 60px;
 }
@@ -366,7 +366,7 @@ ul {
 }
 
 .service .s-02 .s-02-img {
-  background: url("/src/images/s-02.png");
+  background: url("../images/s-02.png");
 }
 
 .service .s-02 .s-02-text cite {
@@ -398,7 +398,7 @@ ul {
 }
 
 .service .s-03 .s-03-img {
-  background: url("/src/images/s-03.png");
+  background: url("../images/s-03.png");
 }
 
 .splide__pagination {
@@ -434,7 +434,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: initial !important;
-  background: url("/src/images/bg5.png");
+  background: url("../images/bg5.png");
   padding-top: 10rem;
   padding-bottom: 4rem;
   min-height: 100vh;
@@ -473,7 +473,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: 100% !important;
   background-position: initial !important;
-  background: url("/src/images/blue-mark.png");
+  background: url("../images/blue-mark.png");
   width: 100%;
   height: 100%;
 }
@@ -482,7 +482,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: 100% !important;
   background-position: initial !important;
-  background: url("/src/images/red-mark.png");
+  background: url("../images/red-mark.png");
   width: 100%;
   height: 100%;
 }
