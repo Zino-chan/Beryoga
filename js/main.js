@@ -204,6 +204,32 @@ const contactAnimation = () => {
 }
 
 
+const removePreloader = () => {
+	gsap.to('.preloader-left', {
+		width: 0,
+		opacity: 0,
+		duration: .5,
+		delay: .5,
+	})
+
+	gsap.to('.preloader-right', {
+		width: 0,
+		opacity: 0,
+		duration: .5,
+		delay: .5,
+	})
+
+	gsap.to('.preloader-icon', {
+		opacity: 0,
+		duration: .5,
+	})
+
+	gsap.to('.preloader', {
+		display: "none",
+		delay: .7,
+	})
+}
+
 
 const splideSlider = () => {
 	new Splide('.splide', {arrows: false}).mount()
@@ -211,6 +237,7 @@ const splideSlider = () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+	removePreloader();
 
 	barba.init({
 		sync: true,

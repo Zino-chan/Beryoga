@@ -11,6 +11,13 @@
     <title>Beryoga</title>
 </head>
 <body data-barba="wrapper">
+
+    <div class="preloader">
+        <div class="preloader-left"></div>
+        <div class="preloader-icon"></div>
+        <div class="preloader-right"></div>
+    </div>
+
     <!--Page transition-->
     <div class="page-transition">
         <div class="loader"></div>
@@ -38,7 +45,7 @@
 
     <main data-barba="container" data-barba-namespace="about">
     <!-- About Start -->
-    <section class="about vw-100 ">
+    <section class="about vw-100 d-flex align-items-center justify-content-center">
         <div class="container-fluid h-100 d-flex justify-content-center align-items-center flex-column">
             <div class="title text-center">
                 <h2 class="mb-4">Why choose BerYoga</h2>
@@ -89,6 +96,6 @@
     <script src="https://unpkg.com/@barba/css"></script>
 
     <!-- Main js -->
-    <script src="js/main.js" type="module" ></script> 
+    <script src="/src/js/main.js" type="module" ></script> 
 </body>
 </html>
