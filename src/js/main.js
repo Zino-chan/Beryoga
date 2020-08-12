@@ -168,8 +168,44 @@ const pricingAnimation = () => {
 }
 
 
-const glideSlider = () => {
-	return new Splide('.splide', {arrows: false}).mount()
+const contactAnimation = () => {
+	gsap.from('.contact-text h3', {
+		opacity: 0,
+		y: -100,
+		duration: 1.5,
+		delay: 1.5,
+		ease: "Expo.easeInOut",
+	});
+
+	gsap.from('.contact-text li', {
+		x: -100,
+		opacity: 0,
+		duration: 1.5,
+		delay: 1.5,
+		ease: "Expo.easeInOut",
+		stagger: .3
+	})
+
+	gsap.from('.contact-text p', {
+		x: -100,
+		opacity: 0,
+		duration: 1.5,
+		delay: 1.5,
+		ease: "Expo.easeInOut",
+	})
+
+	gsap.from('.copy-right', {
+		y: 100,
+		opacity: 0,
+		duration: 1.5,
+		delay: 1.5,
+		ease: "Expo.easeInOut",
+	})
+}
+
+
+const splideSlider = () => {
+	new Splide('.splide', {arrows: false}).mount()
 }
 
 
@@ -205,7 +241,7 @@ barba.init({
 				namespace: 'service',
 				beforeEnter(data) {	
 					serviceAnimation();
-					glideSlider();
+					splideSlider();
 				},
 				
 			},
@@ -213,6 +249,12 @@ barba.init({
 				namespace: 'pricing',
 				afterEnter(data) {	
 					pricingAnimation();
+				},
+			},
+			{
+				namespace: 'contact',
+				afterEnter(data) {	
+					contactAnimation();
 				},
 			},
 			  

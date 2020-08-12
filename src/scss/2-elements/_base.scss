@@ -23,6 +23,9 @@ main{
     overflow-x: hidden;
 }
 
+li{list-style: none;}
+
+ul{padding: 0; margin: 0;}
 
 .container-fluid{max-width: 1600px;}
 

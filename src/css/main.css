@@ -49,6 +49,15 @@ main {
   overflow-x: hidden;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .container-fluid {
   max-width: 1600px;
 }
@@ -555,5 +564,39 @@ main {
   .pricing-info {
     width: 100% !important;
   }
+}
+
+.contact {
+  padding: 13rem 0;
+  background-color: rgba(163, 234, 249, 0.7);
+  min-height: 100vh;
+}
+
+.contact .contact-content {
+  margin-bottom: 8rem;
+}
+
+.contact .contact-content h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.contact .contact-content .nav-link {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding: .5rem 0;
+  font-family: "Quicksand-SemiBold", sans-serif;
+}
+
+.contact .contact-content p {
+  font-size: 2rem;
+  font-family: "Quicksand-SemiBold", sans-serif;
+}
+
+.contact .copy-right {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Quicksand-Medium", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

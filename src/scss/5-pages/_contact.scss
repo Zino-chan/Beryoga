@@ -1,0 +1,29 @@
+.contact{
+    padding: 13rem 0;
+    background-color: rgba(163, 234, 249,.7);
+    min-height: 100vh;
+
+    .contact-content{
+        margin-bottom: 8rem;
+        h3{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .nav-link{
+            font-size: 1.8rem;
+            color: $light-gray;
+            padding: .5rem 0;
+            font-family: $semi-bold-sand;
+        }
+
+        p{font-size: 2rem; font-family: $semi-bold-sand;}
+    }
+
+    .copy-right{
+        text-align: center;
+        font-size: 2rem;
+        font-family: $medium-sand;
+    }
+}
