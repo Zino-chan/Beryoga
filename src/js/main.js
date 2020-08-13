@@ -250,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 			async beforeEnter(data) {
 				document.querySelector('.header .navbar-nav').classList.remove('open');
+				document.querySelector('.navbar-toggler').classList.remove('open');
 			}
 			},
 		],
