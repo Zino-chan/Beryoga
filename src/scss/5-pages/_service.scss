@@ -3,6 +3,7 @@
     @include bgImg(contain, initial);
     background: url('../images/bg2.png');
     min-height: 100vh;
+    padding: 7rem 0;
 
    
 
@@ -20,7 +21,7 @@
 
     .s-01{
         width: 100vw;
-        padding:15rem 0;
+        padding-top:15rem;
 
         .s-01-img{background: url('../images/s-01.png');}
 
@@ -44,7 +45,7 @@
     // S-02
     .s-02{
         width: 100vw;
-        padding:15rem 0;
+        padding-top:15rem;
 
         .s-02-img{background: url('../images/s-02.png');}
 
@@ -72,36 +73,23 @@
     //S-03
     .s-03{
         width: 100vw;
-        padding:15rem 0;
+        padding-top:15rem;
 
         .s-03-img{background: url('../images/s-03.png');}
 
     }
 }
-.splide__pagination{
-    bottom: 10%!important;
 
 
-    .splide__pagination__page{
-        margin: 0 10px!important;
-        width: 35px!important;
-        height: 35px!important;
-        background-color: #A3EAF9!important;
-        &.is-active{background-color: $primary-color!important;}
-    }
+@include responsive_mobile(){
+    .s-01-img,
+    .s-02-img,
+    .s-03-img{display: none!important;}
 }
 
 
 @include responsive_max(450px){
     h2{font-size: 3rem!important;}
     
-    .slider-controls{
-        bottom: 7%!important;
-        .btn{
-            width: 50px!important;
-            height: 50px!important;
-            line-height: 50px!important;
-        }
-    }
 }
 
