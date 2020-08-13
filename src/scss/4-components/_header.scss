@@ -23,6 +23,7 @@
             height: 4px;
             background-color: $primary-color;
             position: relative;
+            @include transition();
 
             &::after,
             &::before{
@@ -32,11 +33,23 @@
                 width: 100%;
                 height: 4px;
                 background-color: $primary-color;
+                transform-origin: center;
+                @include transition();
             }
             &::after{bottom: -13px;}
             &::before{top: -13px;}
-            
         }       
+
+        &.open{
+            .toggler{
+                transform: translateX(-65px);
+                background: transparent;
+                @include transition();
+
+                &:before{transform: rotate(45deg) translate(49px, -35px);  @include transition();}
+                &:after{transform: rotate(-45deg) translate(53px, 30px);  @include transition();}
+            }
+        }
     }
 
     .nav-item{
@@ -75,6 +88,7 @@
             overflow: hidden;
             align-items: center;
             @include transition();
+            border-radius: 0 0 15px 15px;
             &.open{max-height: 400px; @include transition();}
             .nav-item{margin: 2rem 1.5rem !important;}
         }

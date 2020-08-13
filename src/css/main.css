@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Quicksand-Bold';
-  src: url("/src/fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-Light';
-  src: url("/src/fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-Medium';
-  src: url("/src/fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-Regular';
-  src: url("/src/fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Quicksand-SemiBold';
-  src: url("/src/fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
 }
 
 html {
@@ -194,6 +194,8 @@ ul {
   height: 4px;
   background-color: #ff6a6d;
   position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .navbar-toggler .toggler::after, .header .navbar-toggler .toggler::before {
@@ -203,6 +205,10 @@ ul {
   width: 100%;
   height: 4px;
   background-color: #ff6a6d;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .navbar-toggler .toggler::after {
@@ -211,6 +217,28 @@ ul {
 
 .header .navbar-toggler .toggler::before {
   top: -13px;
+}
+
+.header .navbar-toggler.open .toggler {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+  background: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .navbar-toggler.open .toggler:before {
+  -webkit-transform: rotate(45deg) translate(49px, -35px);
+          transform: rotate(45deg) translate(49px, -35px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .navbar-toggler.open .toggler:after {
+  -webkit-transform: rotate(-45deg) translate(53px, 30px);
+          transform: rotate(-45deg) translate(53px, 30px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .nav-item {
@@ -256,6 +284,7 @@ ul {
             align-items: center;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    border-radius: 0 0 15px 15px;
   }
   .header .navbar-nav.open {
     max-height: 400px;
