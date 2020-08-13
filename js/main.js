@@ -231,13 +231,12 @@ const removePreloader = () => {
 }
 
 
-const splideSlider = () => {
-	new Splide('.splide', {arrows: false}).mount()
-}
 
 
 document.addEventListener('DOMContentLoaded', () => {
 	removePreloader();
+
+	
 
 	barba.init({
 		sync: true,
@@ -247,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				async leave(data) {
 					pageTransition();
 					await delay(1000);
-					//data.current.container.remove();
+					data.current.container.remove();
 			},
 			async beforeEnter(data) {
 				document.querySelector('.header .navbar-nav').classList.remove('open');
@@ -269,11 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 		{
 			namespace: 'service',
-			beforeEnter(data) {	
+			afterEnter(data) {
 				serviceAnimation();
-				splideSlider();
 			},
-			
 		},
 		{
 			namespace: 'pricing',
@@ -306,4 +303,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector('.navbar-toggler').addEventListener('click', () => {
 	document.querySelector('.header .navbar-nav').classList.toggle('open');
+	document.querySelector('.navbar-toggler').classList.toggle('open');	
 })

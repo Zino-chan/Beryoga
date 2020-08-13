@@ -194,6 +194,8 @@ ul {
   height: 4px;
   background-color: #ff6a6d;
   position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .navbar-toggler .toggler::after, .header .navbar-toggler .toggler::before {
@@ -203,6 +205,10 @@ ul {
   width: 100%;
   height: 4px;
   background-color: #ff6a6d;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .navbar-toggler .toggler::after {
@@ -211,6 +217,28 @@ ul {
 
 .header .navbar-toggler .toggler::before {
   top: -13px;
+}
+
+.header .navbar-toggler.open .toggler {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+  background: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .navbar-toggler.open .toggler:before {
+  -webkit-transform: rotate(45deg) translate(49px, -35px);
+          transform: rotate(45deg) translate(49px, -35px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header .navbar-toggler.open .toggler:after {
+  -webkit-transform: rotate(-45deg) translate(53px, 30px);
+          transform: rotate(-45deg) translate(53px, 30px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .nav-item {
@@ -256,6 +284,7 @@ ul {
             align-items: center;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    border-radius: 0 0 15px 15px;
   }
   .header .navbar-nav.open {
     max-height: 400px;
@@ -403,6 +432,7 @@ ul {
   background-position: initial !important;
   background: url("../images/bg2.png");
   min-height: 100vh;
+  padding: 7rem 0;
 }
 
 .service .service-img {
@@ -421,7 +451,7 @@ ul {
 
 .service .s-01 {
   width: 100vw;
-  padding: 15rem 0;
+  padding-top: 15rem;
 }
 
 .service .s-01 .s-01-img {
@@ -449,7 +479,7 @@ ul {
 
 .service .s-02 {
   width: 100vw;
-  padding: 15rem 0;
+  padding-top: 15rem;
 }
 
 .service .s-02 .s-02-img {
@@ -481,39 +511,24 @@ ul {
 
 .service .s-03 {
   width: 100vw;
-  padding: 15rem 0;
+  padding-top: 15rem;
 }
 
 .service .s-03 .s-03-img {
   background: url("../images/s-03.png");
 }
 
-.splide__pagination {
-  bottom: 10% !important;
-}
-
-.splide__pagination .splide__pagination__page {
-  margin: 0 10px !important;
-  width: 35px !important;
-  height: 35px !important;
-  background-color: #A3EAF9 !important;
-}
-
-.splide__pagination .splide__pagination__page.is-active {
-  background-color: #ff6a6d !important;
+@media only screen and (max-width: 769px) {
+  .s-01-img,
+  .s-02-img,
+  .s-03-img {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   h2 {
     font-size: 3rem !important;
-  }
-  .slider-controls {
-    bottom: 7% !important;
-  }
-  .slider-controls .btn {
-    width: 50px !important;
-    height: 50px !important;
-    line-height: 50px !important;
   }
 }
 
