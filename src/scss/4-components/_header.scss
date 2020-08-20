@@ -79,18 +79,29 @@
         position: relative;
         .navbar{padding: 0!important;}
         .navbar-nav{
-            position: absolute;
-            top: 100%;
+            position: fixed;
+            top: 0;
             left: 0;
+            z-index: -1;
             background: $white;
             width: 100%;
-            max-height: 0;
+            height: 100vh;
             overflow: hidden;
             align-items: center;
+            justify-content: center;
             @include transition();
-            border-radius: 0 0 15px 15px;
-            &.open{max-height: 400px; @include transition();}
-            .nav-item{margin: 2rem 1.5rem !important;}
+            border-radius: 0 0 100% 100%;
+            transform: translateY(-100vh);
+            
+            .nav-item{
+                margin: 2rem 1.5rem !important;
+                .nav-link{color: $primary-color; font-size: 3rem;}
+            }
+
+            &.open{
+                transform: translateY(0)!important;
+                border-radius: 0!important;
+            }
         }
 
         .navbar-toggler{

@@ -236,6 +236,12 @@ const removePreloader = () => {
 document.addEventListener('DOMContentLoaded', () => {
 	removePreloader();
 
+	document.querySelectorAll('.nav-link').forEach(link => {
+		link.addEventListener('click', () => {
+			document.querySelector('.header .navbar-nav').classList.remove('open');
+			document.querySelector('.navbar-toggler').classList.remove('open');
+		})
+	})
 	
 
 	barba.init({
@@ -250,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 			async beforeEnter(data) {
 				document.querySelector('.header .navbar-nav').classList.remove('open');
+				document.querySelector('.navbar-toggler').classList.remove('open');
 			}
 			},
 		],

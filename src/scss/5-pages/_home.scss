@@ -64,7 +64,7 @@
 }
 
 @include responsive_max(320px){
-    .home-text a.btn{padding: 1.5rem 3rem!important;}
+    .home-text a.btn{padding: 1rem 0!important; width: 110!important;}
 }
 
 @include responsive_min(1300px) {
