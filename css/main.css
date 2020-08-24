@@ -387,7 +387,7 @@ ul {
 @media only screen and (max-width: 320px) {
   .home-text a.btn {
     padding: 1rem 0 !important;
-    width: 110 !important;
+    width: 110px !important;
   }
 }
 
